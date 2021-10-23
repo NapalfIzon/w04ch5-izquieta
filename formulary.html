@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./src/images/memo.png"
+        alt="Logo formulario"
+      />
+      <h1>Formulario de registro</h1>
+      <img
+        class="header__logo"
+        src="./src/images/memo.png"
+        alt="Logo formulario"
+      />
+    </header>
+    <main class="main">
+      <h2 class="main__title">Datos personales</h2>
+      <div class="main__data">
+        <form class="main__data__form">
+          <div class="main__data__form__blockA form-row">
+            <div class="main__data__form__blockA__name form-group col-md-6">
+              <label for="inputName">Nombre</label>
+              <input
+                type="text"
+                class="main__data__form__blockA__name--input form-control"
+                id="inputName"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="main__data__form__blockA__surname form-group col-md-6">
+              <label for="inputSurname">Apellidos</label>
+              <input
+                type="text"
+                class="main__data__form__blockA__surname--input form-control"
+                id="inputSurname"
+                placeholder="Apellidos"
+              />
+            </div>
+          </div>
+          <div class="main__data__form__blockB form-group">
+            <div class="main__data__form__blockB__date form-group col-md-6">
+              <label for="inputDate">Fecha de Nacimiento</label>
+              <input
+                type="date"
+                class="
+                  main__data__form__blockB__date--input
+                  form-control form-group
+                  col-md-6
+                "
+                id="inputDate"
+              />
+            </div>
+            <p class="main__data__form__blockB__age form-group col-md-6">
+              39 años
+            </p>
+          </div>
+          <div class="main__data__form__blockC form-group">
+            <div class="main__data__form__blockC__email form-group col-md-6">
+              <label for="inputEmail">E-mail</label>
+              <input
+                type="email"
+                class="main__data__form__blockC__email--input form-control"
+                id="inputEmail"
+                placeholder="E-mail"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="main__data__form__summit btn btn-primary"
+          >
+            Continuar
+          </button>
+        </form>
+      </div>
+      <h2 class="main__title">Datos de acceso</h2>
+      <div class="main__data">
+        <form class="main__data__form">
+          <div class="main__data__form__blockA form-row">
+            <div class="main__data__form__blockA__username form-group col-md-6">
+              <label for="inputUsername">Nombre de usuario</label>
+              <input
+                type="text"
+                class="main__data__form__blockA__username--input form-control"
+                id="inputUsername"
+                placeholder="Nombre de usuario"
+              />
+            </div>
+          </div>
+          <div class="main__data__form__blockB form-row">
+            <div class="main__data__form__blockB__password form-group col-md-6">
+              <label for="inputPassword">Contraseña</label>
+              <input
+                type="text"
+                class="main__data__form__blockB__password--input form-control"
+                id="inputPassword"
+                placeholder="Contraseña"
+              />
+            </div>
+            <div
+              class="main__data__form__blockB__repassword form-group col-md-6"
+            >
+              <label for="inputRepassword">Confirma contraseña</label>
+              <input
+                type="text"
+                class="main__data__form__blockB__repassword--input form-control"
+                id="inputRepassword"
+                placeholder="Confirma Contraseña"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="main__data__form__summit btn btn-primary"
+          >
+            Continuar
+          </button>
+        </form>
+      </div>
+      <h2 class="main__title">Acceso</h2>
+      <div class="main__data">
+        <form class="main__data__form">
+          <div class="main__data__form__blockA form-row">
+            <div class="main__data__form__blockA__username form-group col-md-6">
+              <label for="inputUsername">Nombre de usuario</label>
+              <input
+                type="text"
+                class="main__data__form__blockA__username--input form-control"
+                id="inputUsername"
+                placeholder="Nombre de usuario"
+              />
+            </div>
+          </div>
+          <div class="main__data__form__blockB form-row">
+            <div class="main__data__form__blockB__password form-group col-md-6">
+              <label for="inputPassword">Contraseña</label>
+              <input
+                type="text"
+                class="main__data__form__blockB__password--input form-control"
+                id="inputPassword"
+                placeholder="Contraseña"
+              />
+            </div>
+            <div class="main__data__form__blockB__checkbox form-group col-md-6">
+              <label for="inputCheckbox">Recuerda contraseña</label>
+              <input
+                type="checkbox"
+                class="main__data__form__blockB__checkbox--input form-control"
+                id="inputCheckbox"
+                placeholder="Recuerda Contraseña"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="main__data__form__summit btn btn-primary"
+          >
+            Confirmar
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="copyright">
+        Designed for <a href="https://isdicoders.com/es">ISDI Coders</a> by
+        <a href="https://github.com/NapalfIzon/">Napoleón Izquieta</a>.
+      </p>
+    </footer>
+  </body>
+</html>
